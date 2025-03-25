@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuários</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grupo-buttons">
+            <button type="button" id="salvar" class="buttons">Salvar</button>
+            <button type="button" id="buscar" class="buttons">Buscar</button>
+            <button type="button" id="alterar" class="buttons">Alterar</button>
+            <button type="button" id="apagar" class="buttons">Apagar</button>
+        </div>
+        <div class="form">
+            Id:<input type="number" id="id" placeholder="id">
+            Nome:<input type="text" id="nome" placeholder="Insirar seu nome">
+            E-mail:<input type="text" id="email" placeholder="Digite seu E-mail">
+        </div>
+        
+        <textarea id="jsonArea" placeholder="Os dados em JSON aparecerão aqui..."></textarea>
+        
+        <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+
+    <script src="./src/js/api.js"></script>
+</body>
+</html>
