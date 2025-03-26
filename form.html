@@ -7,12 +7,16 @@
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
+    <h1>Projeto by Alice & Gustavo</h1>
     <div class="container">
         <div class="grupo-buttons">
-            <button type="button" id="salvar" class="buttons">Salvar</button>
+            <button type="button" id="salvar" class="buttons">Cadastrar</button>
             <button type="button" id="buscar" class="buttons">Buscar</button>
             <button type="button" id="alterar" class="buttons">Alterar</button>
             <button type="button" id="apagar" class="buttons">Apagar</button>
+        </div>
+        <div class="container-comoFunciona">
+            <button class="buttons" id="btn-comoFunciona">COMO FUNCIONA??</button>
         </div>
         <div class="form">
             Id:<input type="number" id="id" placeholder="id">
@@ -23,6 +27,36 @@
         <textarea id="jsonArea" placeholder="Os dados em JSON aparecerão aqui..."></textarea>
         
         <div id="resultado" style="margin-top: 20px;"></div>
+    </div>
+    <div class="passos" id="passos">
+        <h1 class="passos-titulo">Como funciona</h1>
+        <div class="passo">
+            <h1 class="btn-titulo">CADATRAR</h1>
+            <p>Cadastra o id, nome e email no banco de dados</p>
+        </div>
+        <div class="passo">
+            <h1 class="btn-titulo">Buscar</h1>
+            <p>Busca seu registro atravez de seu id</p>
+        </div>
+        <div class="passo">
+            <h1 class="btn-titulo">Alterar</h1>
+            <p>Logo apos de buscar seus dados, voce pode alterar o id, nome e email</p>
+        </div>
+        <div class="passo">
+            <h1 class="btn-titulo">Deletar</h1>
+            <p>Deleta o id selecionado</p>
+        </div>
+    </div>
+    <div class="obs">
+        <div class="obs-conexao">
+            <h1>Certifique sua conexão</h1>
+            <img src="/src/img/dbConfig.png" alt="">
+        </div>
+        <div class="obs-localhost">
+            <h1>Certifique que o servidor esta on-line</h1>
+            <img src="/src/img/Servidor.png" alt="">
+        </div>
+        
     </div>
 
     <script src="./src/js/api.js"></script>

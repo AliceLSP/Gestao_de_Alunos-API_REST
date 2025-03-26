@@ -99,3 +99,11 @@ async function clienteDados(metodo) {
       document.getElementById("jsonArea").value = `Erro: ${error.message}`;
   }
 }
+
+
+//button animation
+
+document.getElementById("btn-comoFunciona").addEventListener("click", function() {
+    const section = document.getElementById("passos");
+    section.scrollIntoView({ behavior: "smooth" });
+});
