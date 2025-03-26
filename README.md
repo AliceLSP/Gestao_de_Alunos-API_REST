@@ -4,7 +4,12 @@ Este projeto foi desenvolvido como um sistema gestão de alunos, implementando a
 
 ## Informações principais
 
-Desenvolvido por: <a href="https://github.com/AliceLSP" >Alice Silva</a> e <a href="https://github.com/GustavoRobs-11" >Gustavo Robson</a> 
+Desenvolvido por:
+  - Alice Silva -> 
+    - :books: Github Institucional https://github.com/AliceLSP </li>
+    - :pushpin: Github Profissional https://github.com/Alicelspires </li>
+  - Gustavo Robson ->
+    - :pushpin: Github  https://github.com/GustavoRobs-11
 <br>
 
 ## Objetivos Principais
