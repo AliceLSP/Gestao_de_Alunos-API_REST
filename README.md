@@ -4,9 +4,8 @@ Este projeto foi desenvolvido como um sistema gestão de alunos, implementando a
 
 ## Informações principais
 
-Desenvolvido por: <a href="#" >Alice Silva</a> e <a href="#" >Gustavo Robson</a> 
+Desenvolvido por: <a href="https://github.com/AliceLSP" >Alice Silva</a> e <a href="https://github.com/GustavoRobs-11" >Gustavo Robson</a> 
 <br>
-Emails:
 
 ## Objetivos Principais
 ✔ Demonstrar na prática a integração entre:
@@ -37,3 +36,49 @@ Tecnolgias                                                                      
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)                              | Banco de dados relacional 
 
 ## Como testar o sistema
+
+1. Clone o repositorio em seu Editor de código
+
+```bash
+  git clone https://github.com/AliceLSP/Gestao_de_Alunos-API_REST.git
+```
+
+2. Configure o banco de dados em seu MySQL Workbench
+
+```sql
+CREATE DATABASE fatec1;
+USE fatec1;
+
+CREATE TABLE student(
+    id int auto_increment not null,
+    nome varchar(100) null,
+    email varchar(100) null,
+    primary key(id)
+);
+
+INSERT INTO student VALUES
+(1, 'Ringo', 'ringo@ig.com'),
+(2, 'John', 'john@ig.com'),
+(3, 'Paul', 'paul@ig.com');
+
+SELECT * FROM student;
+```
+
+3. Configure as credencias de acordo com as informações do seu MySQL
+
+```js
+export const dbConfig = {
+  host: 'localhost',        // Mantenha ou altere se usar servidor remoto
+  user: 'SEU_USUARIO',      // <= Ex: 'root' ou um usuário específico
+  password: 'SUA_SENHA',    // <= A senha do seu MySQL
+  database: 'fatec1',       // Nome do banco que você criou
+};
+```
+
+4. Inicie o Sistema
+
+```bash
+node app.js
+```
+
+5. Com uma extensão, como LiveServer, ou diretamente nas configurações, abra a pagina form.html no seu navegador
