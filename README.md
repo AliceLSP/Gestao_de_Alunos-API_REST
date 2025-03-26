@@ -83,7 +83,7 @@ export const dbConfig = {
 4. Inicie o Sistema
 
 ```bash
-node app.js
+node src/js/app.js
 ```
 
 5. Com uma extensão, como LiveServer, ou diretamente nas configurações, abra a pagina form.html no seu navegador
